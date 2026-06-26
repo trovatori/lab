@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it" data-root="https://trovatori.github.io/trovatori/lab">
+<html lang="it">
 
 <head>
   <meta charset="utf-8" />
@@ -3859,23 +3859,23 @@ highlightNote(segId, srcCol)
     <div id="fn-popover-body"></div>
   </div>
 
-  <!-- Fix: corregge il link Home usando data-root sull'elemento <html>.
-       Funziona sia in locale (file://) sia su GitHub Pages (o qualsiasi
-       sottopath), senza fare assunzioni sulla struttura delle cartelle.
-       Per aggiornare la root basta cambiare data-root nel tag <html>. -->
+  <!-- Fix: corregge il link Home risalendo il pathname finché trova index.html.
+       Zero configurazione: funziona in locale, su GitHub Pages e su qualsiasi
+       sottopath senza dover dichiarare la root nel markup. -->
   <script>
     (function () {
       const link = document.getElementById('home-link');
       if (!link) return;
-      const root = document.documentElement.dataset.root;
-      if (root) {
-        // Usa il path assoluto dichiarato in data-root
-        link.href = root.endsWith('/') ? root + 'index.html' : root + '/index.html';
-      } else {
-        // Fallback locale: calcola ../  in base alla profondità del pathname
-        const depth = window.location.pathname.split('/').filter(Boolean).length - 1;
-        link.href = '../'.repeat(depth) + 'index.html';
-      }
+      const parts = window.location.pathname.split('/');
+      (async function () {
+        for (let i = parts.length - 1; i > 0; i--) {
+          const candidate = parts.slice(0, i).join('/') + '/index.html';
+          try {
+            const r = await fetch(candidate, { method: 'HEAD' });
+            if (r.ok) { link.href = candidate; return; }
+          } catch (_) {}
+        }
+      })();
     })();
   </script>
 
