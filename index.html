@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laboratorio di Filologia Romanza Digitale</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent:       #a03f33;
+      --accent-light: rgba(160,63,51,0.08);
+      --accent-mid:   rgba(160,63,51,0.18);
+      --bg:           #fbf9f4;
+      --bg-panel:     #f5f3ee;
+      --text:         #1a1410;
+      --muted:        #6b7280;
+      --border:       #e2ddd6;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Source Sans 3", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(251,249,244,0.97);
+      backdrop-filter: blur(8px);
+      position: sticky; top: 0; z-index: 50;
+    }
+    .header-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 32px;
+    }
+    .header-wordmark {
+      font-size: 9px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.18em;
+      color: var(--muted);
+    }
+    .header-wordmark strong { color: var(--accent); }
+    .header-nav { display: flex; gap: 28px; align-items: center; }
+    .header-nav a {
+      font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--muted); text-decoration: none;
+      transition: color .15s;
+    }
+    .header-nav a:hover { color: var(--accent); }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 1100px; margin: 0 auto;
+      padding: 80px 32px 64px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      font-size: 9px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.2em;
+      color: var(--accent); margin-bottom: 20px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .hero-eyebrow::before {
+      content: ''; display: block; width: 28px; height: 1px;
+      background: var(--accent);
+    }
+    .hero-title {
+      font-family: "Source Serif 4", serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 300; line-height: 1.2;
+      color: var(--text); margin-bottom: 8px;
+    }
+    .hero-title em { font-style: italic; color: var(--accent); }
+    .hero-subtitle {
+      font-family: "Source Serif 4", serif;
+      font-size: 1.05rem; line-height: 1.8;
+      color: var(--muted); margin-top: 24px; max-width: 440px;
+    }
+    .hero-aside {
+      border-left: 1px solid var(--border);
+      padding-left: 48px;
+    }
+    .stat-block { margin-bottom: 32px; }
+    .stat-num {
+      font-family: "Source Serif 4", serif;
+      font-size: 3.2rem; font-weight: 200;
+      color: var(--accent); line-height: 1; margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 9px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.15em; color: var(--muted);
+    }
+    .hero-meta-list { margin-top: 12px; display: flex; flex-direction: column; gap: 8px; }
+    .hero-meta-item {
+      display: flex; align-items: baseline; gap: 10px;
+      font-size: 0.82rem; color: var(--muted);
+    }
+    .hero-meta-item .dot {
+      width: 4px; height: 4px; border-radius: 50%;
+      background: var(--accent); flex-shrink: 0; margin-bottom: 1px;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      max-width: 1100px; margin: 0 auto;
+      border: none; border-top: 1px solid var(--border);
+      margin-left: 32px; margin-right: 32px;
+    }
+
+    /* ── SECTION ── */
+    .section { max-width: 1100px; margin: 0 auto; padding: 64px 32px; }
+    .section-head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin-bottom: 40px;
+    }
+    .section-label {
+      font-size: 9px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted);
+    }
+    .section-count {
+      font-family: "Source Serif 4", serif;
+      font-size: 0.9rem; color: var(--muted);
+    }
+
+    /* ── TIPO-LABEL ── */
+    .edition-type-block { margin-bottom: 48px; }
+    .edition-type-label {
+      font-size: 8px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.22em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px; margin-bottom: 0;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .edition-type-label .material-symbols-outlined {
+      font-size: 14px;
+      font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
+      color: var(--accent);
+    }
+
+    /* ── EDITIONS GRID ── */
+    .editions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border);
+    }
+    .edition-card {
+      background: var(--bg);
+      padding: 36px 36px 28px;
+      display: flex; flex-direction: column;
+      text-decoration: none; color: inherit;
+      transition: background .18s;
+      position: relative; overflow: hidden;
+    }
+    .edition-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--accent);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform .25s ease;
+    }
+    .edition-card:hover { background: var(--bg-panel); }
+    .edition-card:hover::before { transform: scaleX(1); }
+    .card-tradition {
+      font-size: 8px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.2em;
+      color: var(--accent); margin-bottom: 16px;
+    }
+    .card-author {
+      font-family: "Source Sans 3", sans-serif;
+      font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--muted); margin-bottom: 6px;
+    }
+    .card-title {
+      font-family: "Source Serif 4", serif;
+      font-size: 1.35rem; font-weight: 400;
+      font-style: italic; line-height: 1.3;
+      color: var(--text); margin-bottom: 16px;
+    }
+    .card-desc {
+      font-family: "Source Serif 4", serif;
+      font-size: 0.88rem; line-height: 1.7;
+      color: var(--muted); flex: 1; margin-bottom: 28px;
+    }
+    .card-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 1px solid var(--border); padding-top: 18px;
+    }
+    .card-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .card-tag {
+      font-size: 8px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      padding: 3px 8px; border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted); background: white;
+    }
+    .card-tag.accent {
+      border-color: var(--accent-mid);
+      color: var(--accent);
+      background: var(--accent-light);
+    }
+    .card-arrow {
+      font-size: 9px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--accent);
+      display: flex; align-items: center; gap: 4px;
+      transition: gap .15s; white-space: nowrap;
+    }
+    .card-arrow .material-symbols-outlined {
+      font-size: 14px;
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+    }
+    .edition-card:hover .card-arrow { gap: 8px; }
+
+    /* ── ABOUT ── */
+    .about-section {
+      background: var(--bg-panel);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .about-inner {
+      max-width: 1100px; margin: 0 auto;
+      padding: 64px 32px;
+      display: grid; grid-template-columns: 1fr 2fr; gap: 64px;
+    }
+    .about-label {
+      font-size: 9px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.2em;
+      color: var(--muted); padding-top: 6px;
+    }
+    .about-body p {
+      font-family: "Source Serif 4", serif;
+      font-size: 1.05rem; line-height: 1.85;
+      color: var(--text); margin-bottom: 1.2rem;
+    }
+    .about-body p:last-child { margin-bottom: 0; }
+
+    /* ── TOOLS ── */
+    .tools-section { max-width: 1100px; margin: 0 auto; padding: 64px 32px; }
+    .tools-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border); margin-top: 40px;
+    }
+    .tool-item { background: var(--bg); padding: 24px 28px; }
+    .tool-icon {
+      font-size: 11px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.15em;
+      color: var(--accent); margin-bottom: 10px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .tool-icon .material-symbols-outlined {
+      font-size: 18px;
+      font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
+    }
+    .tool-name { font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; }
+    .tool-desc {
+      font-family: "Source Serif 4", serif;
+      font-size: 0.85rem; line-height: 1.65; color: var(--muted);
+    }
+
+    /* ── FOOTER ── */
+    footer { border-top: 1px solid var(--border); background: var(--bg-panel); }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto; padding: 32px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .footer-copy {
+      font-size: 10px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.1em; color: #bbb;
+    }
+    .footer-tei {
+      font-size: 9px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #ccc;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; gap: 40px; padding: 48px 24px 40px; }
+      .hero-aside { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 32px; }
+      .about-inner { grid-template-columns: 1fr; gap: 24px; }
+      .tools-grid { grid-template-columns: 1fr; }
+      .section, .tools-section { padding: 48px 24px; }
+      .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up   { animation: fadeUp .6s ease both; }
+    .fade-up-1 { animation-delay: .05s; }
+    .fade-up-2 { animation-delay: .15s; }
+    .fade-up-3 { animation-delay: .25s; }
+    .fade-up-4 { animation-delay: .35s; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="header-wordmark">
+      <strong>Filologia Romanza</strong> · Edizioni Digitali TEI
+    </div>
+    <nav class="header-nav">
+      <a href="#edizioni">Edizioni</a>
+      <a href="#progetto">Il progetto</a>
+      <a href="#strumenti">Strumenti</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <div class="hero-eyebrow fade-up fade-up-1">Laboratorio di Filologia Romanza Digitale</div>
+    <h1 class="hero-title fade-up fade-up-2">
+      Edizioni critiche<br>e diplomatiche<br><em>in formato digitale</em>
+    </h1>
+    <p class="hero-subtitle fade-up fade-up-3">
+      Un archivio di edizioni di testi medievali romanzi codificate in TEI/XML,
+      con apparato delle varianti, riproduzione facsimilare dei manoscritti,
+      trascrizione diplomatica e interpretativa, traduzione e commento in forma interattiva.
+    </p>
+  </div>
+  <div class="hero-aside fade-up fade-up-4">
+    <div class="stat-block">
+      <div class="stat-num">5</div>
+      <div class="stat-label">Edizioni disponibili</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">2</div>
+      <div class="stat-label">Tipologie di edizione</div>
+    </div>
+    <div class="hero-meta-list">
+      <div class="hero-meta-item"><span class="dot"></span>Codifica TEI P5</div>
+      <div class="hero-meta-item"><span class="dot"></span>Apparato critico interattivo</div>
+      <div class="hero-meta-item"><span class="dot"></span>Facsimile IIIF dei manoscritti</div>
+      <div class="hero-meta-item"><span class="dot"></span>Trascrizione diplomatica e interpretativa</div>
+      <div class="hero-meta-item"><span class="dot"></span>Nota al testo e commento</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- EDITIONS -->
+<section class="section" id="edizioni">
+  <div class="section-head">
+    <span class="section-label">Edizioni disponibili</span>
+    <span class="section-count">5 testi · 2 tipologie</span>
+  </div>
+
+  <!-- EDIZIONI CRITICHE -->
+  <div class="edition-type-block">
+    <div class="edition-type-label">
+      <span class="material-symbols-outlined">difference</span>
+      Edizione critica
+    </div>
+    <div class="editions-grid">
+
+      <a class="edition-card" href="guglielmo/molt jauzions/ed_critica.html">
+        <div class="card-tradition">Tradizione occitana · BPC 183,8 · sec. XII</div>
+        <div class="card-author">Guglielmo IX d'Aquitania</div>
+        <div class="card-title">Molt jauzions mi prenc en amar</div>
+        <div class="card-desc">
+          Edizione critica della canzone con apparato basato su due testimoni
+          manoscritti (C, E). Il lemma segue E; le varianti sostanziali e ortografiche
+          sono registrate nell'apparato con segnalazione delle lezioni congetturali.
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span class="card-tag accent">Edizione critica</span>
+            <span class="card-tag">2 testimoni</span>
+            <span class="card-tag">Apparato</span>
+          </div>
+          <div class="card-arrow">Apri <span class="material-symbols-outlined">arrow_forward</span></div>
+        </div>
+      </a>
+
+      <a class="edition-card" href="guglielmo/vers de dreit nien/ed_critica.html">
+        <div class="card-tradition">Tradizione occitana · BPC 183,6 · sec. XII</div>
+        <div class="card-author">Guglielmo IX d'Aquitania</div>
+        <div class="card-title">Farai un vers de dreit nien</div>
+        <div class="card-desc">
+          Edizione critica del vers con apparato basato sui manoscritti C
+          (Paris, BnF, fr. 856) ed E (Paris, BnF, fr. 1749). Comprende traduzione italiana,
+          commento filologico e facsimile IIIF dei testimoni.
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span class="card-tag accent">Edizione critica</span>
+            <span class="card-tag">2 testimoni</span>
+            <span class="card-tag">Apparato</span>
+            <span class="card-tag">Facsimile</span>
+            <span class="card-tag">Traduzione</span>
+            <span class="card-tag">Commento</span>
+          </div>
+          <div class="card-arrow">Apri <span class="material-symbols-outlined">arrow_forward</span></div>
+        </div>
+      </a>
+
+      <a class="edition-card" href="raimbaut/Ar no sui ges mals et astrucs/ed_critica.html">
+        <div class="card-tradition">Tradizione occitana · BPC 389,14 · sec. XII</div>
+        <div class="card-author">Raimbaut d'Aurenga</div>
+        <div class="card-title">Ar no sui ges mals et astrucs</div>
+        <div class="card-desc">
+          Edizione critica della canzone basata su nove testimoni manoscritti
+          (A, C, Dª, I, K, N, N², R, a). L'apparato registra varianti sostanziali
+          e ortografiche con indicazione delle lezioni congetturali.
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span class="card-tag accent">Edizione critica</span>
+            <span class="card-tag">9 testimoni</span>
+            <span class="card-tag">Apparato</span>
+          </div>
+          <div class="card-arrow">Apri <span class="material-symbols-outlined">arrow_forward</span></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- EDIZIONI DIPLOMATICHE -->
+  <div class="edition-type-block">
+    <div class="edition-type-label">
+      <span class="material-symbols-outlined">history_edu</span>
+      Edizione diplomatica e interpretativa
+    </div>
+    <div class="editions-grid">
+
+      <a class="edition-card" href="eulalia/ed_diplomatica.html">
+        <div class="card-tradition">Tradizione antico-francese · sec. IX</div>
+        <div class="card-author">Anonimo</div>
+        <div class="card-title">Sequenza di Sant'Eulalia</div>
+        <div class="card-desc">
+          Edizione diplomatica e interpretativa del più antico testo letterario
+          in lingua romanza. Trascrizione dal ms. Valenciennes 150 (olim 143),
+          con segnalazione di abbreviazioni, aggiunte interlineari, cancellature
+          e facsimile IIIF (Gallica BnF).
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span class="card-tag accent">Ed. diplomatica</span>
+            <span class="card-tag accent">Ed. interpretativa</span>
+            <span class="card-tag">1 testimone</span>
+            <span class="card-tag">Facsimile</span>
+          </div>
+          <div class="card-arrow">Apri <span class="material-symbols-outlined">arrow_forward</span></div>
+        </div>
+      </a>
+
+      <a class="edition-card" href="philippe/ed_diplomatica.html">
+        <div class="card-tradition">Tradizione anglo-normanna · sec. XII</div>
+        <div class="card-author">Philippe de Thaün</div>
+        <div class="card-title">Bestiaire</div>
+        <div class="card-desc">
+          Edizione diplomatica e interpretativa del prologo del <em>Bestiaire</em>
+          dal ms. London, British Library, Cotton Nero A V. Trascrizione con
+          segnalazione di abbreviazioni, aggiunte e facsimile IIIF (British Library).
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span class="card-tag accent">Ed. diplomatica</span>
+            <span class="card-tag accent">Ed. interpretativa</span>
+            <span class="card-tag">1 testimone</span>
+            <span class="card-tag">Facsimile</span>
+          </div>
+          <div class="card-arrow">Apri <span class="material-symbols-outlined">arrow_forward</span></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</section>
+
+<hr class="divider">
+
+<!-- ABOUT -->
+<div class="about-section" id="progetto">
+  <div class="about-inner">
+    <div class="about-label">Il progetto</div>
+    <div class="about-body">
+      <p>
+        Questo laboratorio raccoglie edizioni digitali di testi medievali
+        in lingua romanza, prodotte secondo i criteri della filologia tradizionale
+        e codificate in TEI P5 (Text Encoding Initiative). Il corpus comprende
+        due tipologie distinte: edizioni critiche, con apparato delle varianti
+        e segnalazione delle lezioni congetturali, ed edizioni diplomatiche
+        e interpretative, con trascrizione fedele al manoscritto e marcatura
+        degli interventi scrittori.
+      </p>
+      <p>
+        Ogni edizione è accompagnata da riproduzioni facsimilari dei manoscritti-testimoni
+        in formato IIIF, consultabili direttamente dalle biblioteche digitali (Gallica BnF,
+        Biblioteca Apostolica Vaticana, Yale). L'interfaccia permette di lavorare in
+        parallelo su due pannelli — testo e apparato, facsimile e trascrizione, testo
+        e traduzione — e di navigare varianti e note con un clic.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- TOOLS -->
+<section class="tools-section" id="strumenti">
+  <div class="section-head">
+    <span class="section-label">Strumenti dell'edizione</span>
+  </div>
+  <div class="tools-grid">
+    <div class="tool-item">
+      <div class="tool-icon"><span class="material-symbols-outlined">auto_stories</span>Testo critico</div>
+      <div class="tool-name">Testo con apparato integrato</div>
+      <div class="tool-desc">Il testo è presentato con le varianti accessibili direttamente da ciascun lemma. Le congetture sono segnalate con parentesi angolari.</div>
+    </div>
+    <div class="tool-item">
+      <div class="tool-icon"><span class="material-symbols-outlined">history_edu</span>Diplomatica</div>
+      <div class="tool-name">Trascrizione diplomatica</div>
+      <div class="tool-desc">Trascrizione fedele al manoscritto con segnalazione di abbreviazioni, aggiunte marginali, cancellature, lacune e integrazioni editoriali.</div>
+    </div>
+    <div class="tool-item">
+      <div class="tool-icon"><span class="material-symbols-outlined">spellcheck</span>Interpretativa</div>
+      <div class="tool-name">Trascrizione interpretativa</div>
+      <div class="tool-desc">Versione con scioglimento delle abbreviazioni e correzioni editoriali segnalate. Generata automaticamente dall'edizione diplomatica o redatta manualmente.</div>
+    </div>
+    <div class="tool-item">
+      <div class="tool-icon"><span class="material-symbols-outlined">image</span>Facsimile</div>
+      <div class="tool-name">Riproduzione dei manoscritti</div>
+      <div class="tool-desc">Visualizzazione IIIF con zoom, pan e navigazione carta per carta, direttamente dalle biblioteche digitali (Gallica BnF, BAV, Yale e altre).</div>
+    </div>
+    <div class="tool-item">
+      <div class="tool-icon"><span class="material-symbols-outlined">difference</span>Apparato</div>
+      <div class="tool-name">Apparato critico filtrato</div>
+      <div class="tool-desc">L'apparato può essere filtrato per testimone e per tipo di variante (sostanziale / ortografica). Le voci si sincronizzano con il testo.</div>
+    </div>
+    <div class="tool-item">
+      <div class="tool-icon"><span class="material-symbols-outlined">chat</span>Commento</div>
+      <div class="tool-name">Note di commento</div>
+      <div class="tool-desc">Le note filologiche sono collegate ai luoghi del testo tramite rimandi numerati. Un clic sul numero apre la nota nel pannello laterale.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© Laboratorio di Filologia Romanza Digitale</span>
+    <span class="footer-tei">Codifica TEI P5 · GitHub Pages</span>
+  </div>
+</footer>
+
+<script>
+  function smartQuotes(str) {
+    if (!str) return str;
+    return str
+      .replace(/(^|[\s(\[{>«])"([^"])/g, '$1\u201C$2')
+      .replace(/"([\s.,;:!?)\]}>»]|$)/g, '\u201D$1')
+      .replace(/(\w)'(\w)/g, '$1\u2019$2')
+      .replace(/(^|[\s])'(\w)/g, '$1\u2018$2')
+      .replace(/'/g, '\u2019');
+  }
+  function applySmartQuotes(root) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+    let node;
+    while ((node = walker.nextNode())) {
+      if (node.parentElement.closest('script, style, code')) continue;
+      const fixed = smartQuotes(node.textContent);
+      if (fixed !== node.textContent) node.textContent = fixed;
+    }
+  }
+  document.addEventListener('DOMContentLoaded', () => applySmartQuotes(document.body));
+</script>
+</body>
+</html>

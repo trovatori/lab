@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Farai un vers de dreit nien</title>
+        <author>Guglielmo IX d’Aquitania</author>
+        <respStmt>
+          <resp>Edizione digitale</resp>
+          <name>Lorenzo Fabiani</name>
+        </respStmt>
+      </titleStmt>
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="C">Paris, BnF, fr. 856</witness>
+          <witness xml:id="E">Paris, BnF, fr. 1749</witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  
+  
+  <facsimile>
+    <!-- Testimone C: Gallica BnF -->
+    <surface xml:id="C" corresp="#C">
+      <graphic url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b8419246t/manifest.json"
+               mimeType="application/ld+json"/>
+      <zone xml:id="C_230v" n="230v"/>
+      <zone xml:id="C_231r" n="231r"/>
+    </surface>
+    
+    <!-- Testimone E: Gallica BnF -->
+    <surface xml:id="E" corresp="#E">
+      <graphic url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b6000801v/manifest.json"
+               mimeType="application/ld+json"/>
+      <zone xml:id="E_114" n="114"/>
+    </surface>
+ </facsimile>
+
+  <text>
+    <front>
+      <div type="introduction">
+        <head>Introduzione</head>
+        <p>
+          Questa edizione digitale del componimento <em>Farai un vers de dreit nien</em>
+          si fonda sull’edizione critica curata da Mario Eusebi.
+        </p>
+      </div>
+
+      <div type="editorialNote">
+        <head>Nota al testo</head>
+        <head1>Osservazioni sulla tradizione manoscritta</head1>
+        <p>
+          Uno dei due manoscritti, E, inserisce tra la sesta strofe e la "tornada"
+          una strofe che Eusebi considera «un allotropo della sesta, poiché contiene
+          un verso ("non aus dire lo tort que m'a") che contraddice il v. 32 e riprende
+          in modo incongruo il v. 27».
+        </p>
+        <p>
+          Nell'apparato predisposto da Eusebi, al v. 26, si legge così trascritta la lezione di C: «lau ui». Il raffronto con il codice 
+          suggerisce invece di interpretare «lan ui», come d'altra parte già faceva Pasero nella propria edizione<note>Cfr. p. 93.</note>.
+        </p>
+      </div>
+    </front>
+
+    <body>
+      <div type="edition">
+        <lg n="1">
+          <l n="1">
+            Farai un vers de
+            <app xml:id="v1">
+              <lem wit="#E">dreit</lem>
+              <rdg wit="#C" type="orthographic">dreyt</rdg>
+            </app>
+            nien<seg xml:id="v1n"></seg>
+          </l>
+          
+          <note target="#v1n">
+            <em>de dreit nien</em>: per la corretta interpretazione, si veda Ménard 1991, p. 344, n. 27.
+          </note>
+
+          <l n="2">
+            non er de mi ni d'autra gen,
+          </l>
+          
+          
+          <l n="3">
+            non er d’amor ni de joven<seg xml:id="v3n">
+            </seg>
+          </l>
+          <note target="#v3n">
+            <em>joven</em>: cfr. <em>Companhos, farai un vers... covinen</em>, I, v. 3.
+          </note>
+
+          <l n="4">
+            ni de ren au<seg xml:id="v4n"></seg>,
+          </l>
+          
+          <note target ="v4n">
+          <em>au</em>: &lt; ALIU, con vocalizzazione della <em>-l</em> finale, così come si ha, sempre in rima, ai vv. 6, 10, ecc.
+            Che non debba trattarsi di singolarità pittavina si evince dai materiali riuniti in Pfister 1976, pp. 101-104,
+            ai quali si possono aggiungere, per il dileguio di -<em>t</em> dopo il dittongo <em>au</em>, come in <em>au</em> &lt; ALTU,
+            quanto è riunito nella nota al v. 12. Cfr. Jensen 1986, pp. 349-350.
+          </note>
+          
+          <l n="5">
+            qu’enans
+            <app xml:id="v5">
+              <lem wit="#E">fo</lem>
+              <rdg wit="#C" type="substantive">fuy</rdg>
+            </app><seg xml:id="v5n"></seg>
+            trobatz en durmen
+          </l>
+          
+          <note target ="v5n">
+            <em>fo</em>: la lezione concorrente di C, <em>fuy</em>, merita considerazione in quanto elimina
+            la divaricazione dei due tempi di composizione del <em>vers</em>.
+          </note>
+
+          <l n="6">
+            <app xml:id="v6">
+              <lem wit="#E">sus un</lem>
+              <rdg wit="#C" type="substantive">sobre</rdg>
+            </app>
+            <app xml:id="v7">
+              <lem wit="#E">chivau</lem>
+              <rdg wit="#C" type="orthographic">chevau</rdg>
+            </app><seg xml:id="v6n"></seg>.
+          </l>
+          
+          <note target ="v6n">
+            <em>en durmen... chivau</em>: il cavaliere dormiente sul suo cavallo è motivo letterario non incompatibile con la foggia 
+            della sella medievale (cfr. Riquer 1975, I, p. 113). Per una cornice di riferimento sulla forma <em>chivau</em>, vedi FEW, II, 8-9, 12.
+          </note>
+          
+        </lg>
+        
+          <lg n="2">
+            <l n="7">
+              No sai en qual <app xml:id="v7a">
+                <lem wit="#E">hora·m</lem>
+                <rdg wit="#C" type="substantive">guizam</rdg>
+              </app><app xml:id="v7b">
+                <lem wit="#E">fui</lem>
+                <rdg wit="#C" type="orthographic">fuy</rdg>
+              </app> natz,
+            </l>
+            <l n="8">
+              No <app xml:id="v8a">
+                <lem wit="#E">soi</lem>
+                <rdg wit="#C" type="orthographic">suy</rdg>
+              </app> alegres ni iratz,
+            </l>
+            <l n="9">
+              No <app xml:id="v9a">
+                <lem wit="#E">soi</lem>
+                <rdg wit="#C" type="orthographic">suy</rdg>
+              </app> <app xml:id="v9b">
+                <lem wit="#E">estranhs</lem>
+                <rdg wit="#C" type="orthographic">estrayns</rdg>
+              </app> ni <app xml:id="v9c">
+                <lem wit="#E">soi</lem>
+                <rdg wit="#C" type="orthographic">suy</rdg>
+              </app> <seg xml:id="n9a">privatz</seg>,
+            </l>
+            <l n="10">
+              Ni no·n puesc au,
+            </l>
+            <l n="11">
+              <app xml:id="v11a">
+                <lem wit="#E">Qu'enaisi</lem>
+                <rdg wit="#C" type="orthographic">quenaissi</rdg>
+              </app>  <app xml:id="v11b">
+                <lem wit="#E">fui</lem>
+                <rdg wit="#C" type="orthographic">fuy</rdg>
+              </app> de nueitz fadatz
+            </l>
+            <l n="12">
+              Sobr'un pueg <seg xml:id="n12a">au</seg>.
+            </l>
+          </lg>
+          <note target="#n9a"><hi rend="italic">estranhs... privatz</hi>: l'opposizione mi pare da rubricare 
+            tra quelle etniche e spaziali, e si coordina con l'indeterminatezza temporale data nel v. 7 Cfr. PSW, VI, p. 562</note>
+          <note target="#n12a"><hi rend="italic">au</hi>: &lt; ALTU. Per il dileguo di -<hi rend="italic">t</hi>, 
+            rubricato come pittavinismo, non mancano esempi fuori del Poitou: Brunel, p. 299, 2, 4, 
+            5 <hi rend="italic">Arnau</hi>, 273, 13 <hi rend="italic">Reinau</hi>, 284, 5 <hi rend="italic">Guirau</hi>. 
+            Si aggiunga, ricordato da Jensen 1986, p. 355, <hi rend="italic">al</hi>, in <hi rend="italic">Sainte Enimie</hi>, v. 1602.</note>
+               
+        <lg n="3">
+          <l n="13">
+            No sai <app xml:id="av13.1">
+              <lem>cora·m sui</lem>
+              <rdg wit="#C" type="substantive">quoram fuy</rdg>
+            </app> <app xml:id="av13.2">
+              <lem>endormitz</lem>
+              <rdg wit="#C" type="substantive">endurmitz</rdg>
+            </app>
+          </l>
+          <l n="14">
+            Ni <app xml:id="av14.1">
+              <lem>cora·m veill</lem>
+              <rdg wit="#C" type="substantive">quoram velh</rdg>
+            </app> s'om no m'o <app xml:id="av14.2">
+              <lem>ditz</lem>
+              <rdg wit="#C" type="substantive">dutz <witDetail>(ma con la prima asta di “u” espunta)</witDetail></rdg>
+            </app>;
+          </l>
+          <l n="15">
+            Per pauc no m'es lo cor partitz
+          </l>
+          <l n="16">
+            d'un dol corau,
+          </l>
+          <l n="17">
+            E no m'o pretz una <app xml:id="av17.1">
+              <lem>fromitz</lem>
+              <rdg wit="#C" type="substantive">soritz</rdg>
+            </app><seg xml:id="nv17.1"/>
+          </l>
+          <l n="18">
+            Per <app xml:id="av18.1">
+              <lem>saint</lem>
+              <rdg wit="#C" type="substantive">sanh</rdg>
+            </app> Marsau!
+          </l>
+        </lg>
+        <note target="#nv17.1"><hi rend="italic">no m'o pretz una fromitz</hi>: locuzione formulare con dativo etico. Il rafforzamento della negazione, in E «formica»   in E <hi rend="italic">fromits </hi>«formica»  e in C <hi rend="italic">soritz</hi> «topo», è funzionale alla rima, come lo  è con <hi rend="italic">jau</hi> «gallo» al v. 34 e come lo è l'invocazione del santo limosino nel verso seguente.</note>
+        
+        <lg n="4">
+          <l n="19">
+            <app xml:id="av19.1">
+              <lem wit="#C">Malautz</lem>
+              <rdg wit="#E" type="substantive">maluatz</rdg>
+            </app> <app xml:id="av19.2">
+              <lem wit="#E">soi</lem>
+              <rdg wit="#C" type="orthographic">soy</rdg>
+            </app> e <app xml:id="av19.3">
+              <lem type="conjecture">cremi</lem>
+              <rdg wit="#C" type="substantive">tremi</rdg>
+              <rdg wit="#E" type="substantive">cre</rdg>
+            </app> <app xml:id="av19.4">
+              <lem wit="#E">morir</lem>
+              <rdg wit="#C" type="orthographic">murir</rdg>
+            </app>,
+          </l>
+          <l n="20">
+            E <app xml:id="av20.1">
+              <lem wit="#E">re</lem>
+              <rdg wit="#C" type="orthographic">ren</rdg>
+            </app> no sai mas quan n'aug dir;
+          </l>
+          <l n="21">
+            Metge querrai al mieu albir,
+          </l>
+          <l n="22">
+            E <app xml:id="av22.1">
+              <lem wit="#E">no·m</lem>
+              <rdg wit="#C" type="substantive">no</rdg>
+            </app> sai <app xml:id="av22.2">
+              <lem type="conjecture">cau</lem>
+              <rdg wit="#C" type="substantive">tam</rdg>
+              <rdg wit="#E" type="substantive">tan</rdg>
+            </app>:<seg xml:id="nv22.1"/>
+          </l>
+          <l n="23">
+            Bos metges <app xml:id="av23.1">
+              <lem wit="#E">er</lem>
+              <rdg wit="#C" type="substantive">es</rdg>
+            </app> <app xml:id="av23.2">
+              <lem wit="#E">si·m</lem>
+              <rdg wit="#C" type="substantive">quim</rdg>
+            </app> pot guerir,
+          </l>
+          <l n="24">
+            <app xml:id="av24.1">
+              <lem wit="#C">Mas</lem>
+              <rdg wit="#E" type="substantive">mor</rdg>
+            </app> <app xml:id="av24.2">
+              <lem wit="#E">non</lem>
+              <rdg wit="#C" type="substantive">ia non</rdg>
+            </app>, <app xml:id="av24.3">
+              <lem type="conjecture">si·m</lem>
+              <rdg wit="#C" type="substantive">si</rdg>
+              <rdg wit="#E" type="substantive">sia</rdg>
+            </app> mau.<seg xml:id="nv24.1"/>
+          </l>
+        </lg>
+        <note target="#nv22.1"><hi rend="italic">nom sai cau</hi>: la costruzione pronominale, solo in E, avrà valore intensivo. Per la parola in rima, non vedo la ragione, poiché la congettura s'impone, di non proporre niente di meglio di <hi rend="italic">tau</hi>, che non conviene, come fa, ma non Jeanroy, la più parte degli editori. Cfr. Jensen 1985, p. 446.</note>
+        <note target="#nv24.1"><hi rend="italic">Mas non, si'm mau</hi>: rifiuto <hi rend="italic">mor</hi> di E perché sembra il prodotto della suggestione dei contigui <hi rend="italic">guerir... non</hi>. La difficoltà della rima credo vada risolta come già propose il Levy nel PSW, V, 47, s.v. <hi rend="italic">malar </hi>– ma cfr. FEW, VI, 124 – che figura per questo stesso ed unico luogo. Non mi pare si possa forzare l'analogia con il passo agostiniano richiamato da Köhler 1964, 56: «non sarà medico se è cattivo medico» («Si enim malus est, doctor non est; si doctor est, malus non est»).</note>
+        
+        <lg n="5">
+          <l n="25">
+            <app xml:id="av25.1">
+              <lem wit="#E">Amigu'ai ieu</lem>
+              <rdg wit="#C" type="substantive">mamigua ieu</rdg>
+            </app>, <app xml:id="av25.2">
+              <lem wit="#E">non</lem>
+              <rdg wit="#C" type="orthographic">no</rdg>
+            </app> sai qui s'es,
+          </l>
+          <l n="26">
+            <app xml:id="av26.1">
+              <lem wit="#E">C'anc</lem>
+              <rdg wit="#C" type="orthographic">quanc</rdg>
+            </app> <app xml:id="av26.2">
+              <lem wit="#E">no</lem>
+              <rdg wit="#C" type="orthographic">non</rdg>
+            </app> <app xml:id="av26.3">
+              <lem wit="#E">la vi</lem>
+              <rdg wit="#C" type="substantive">lan ui</rdg>
+            </app>, si m'aiut fes,
+          </l>
+          <l n="27">
+            Ni'm fes qu·em plassa ni que·m pes,
+          </l>
+          <l n="28">
+            Ni no m'en cau
+          </l>
+          <l n="29">
+            <app xml:id="av29.1">
+              <lem wit="#E">C'anc</lem>
+              <rdg wit="#C" type="orthographic">quanc</rdg>
+            </app> non ac Norman ni <app xml:id="av29.2">
+              <lem wit="#E">Franses</lem>
+              <rdg wit="#C" type="orthographic">frances</rdg>
+            </app><seg xml:id="nv29.1"/>
+          </l>
+          <l n="30">
+            Dins mon ostau.
+          </l>
+        </lg>
+        <note target="#nv29.1">Norman ni Franses: Ménard 1991, p. 347 avanza prudentemente l'ipotesi che qui si abbia un'allusione geografica all'origine dell'amiga. Fa tuttavia ostacolo il fatto che gli etnici siano due: probabilmente si allude a qualche altra circostanza, forse, ma non ncessariamente, connessa ai comportamenti di Normanni e Francesi (gli abitanti dell'Ile-de-France). Poco persuasiva la proposta di Topsfield 1971, p. 578 che intende norma ni frances «rule or mesure».</note>
+        <lg n="6">
+          <l n="31">
+            Anc non la vi et am la fort,
+          </l>
+          <l n="32">
+            Anc no'n aic <app xml:id="av32.1">
+              <lem wit="#E">dreit</lem>
+              <rdg wit="#C" type="orthographic">dreyt</rdg>
+            </app> ni nom fes tort;
+          </l>
+          <l n="33">
+            Quan <app xml:id="av33.1">
+              <lem wit="#E">no</lem>
+              <rdg wit="#C" type="orthographic">non</rdg>
+            </app> la <!-- ERRORE: vei (C*: vey) -->, be m'en deport,
+          </l>
+          <l n="34">
+            Nom pretz un jau,
+          </l>
+          <l n="35">
+            Qu'ie'n sai <app xml:id="av35.1">
+              <lem wit="#C">gensor</lem>
+              <rdg wit="#E" type="orthographic">genser</rdg>
+            </app> e <app xml:id="av35.2">
+              <lem wit="#E">belazor</lem>
+              <rdg wit="#C" type="orthographic">bellazor</rdg>
+            </app><seg xml:id="nv35.1"/>
+          </l>
+          <l n="36">
+            E que <app xml:id="av36.1">
+              <lem wit="#E">mai</lem>
+              <rdg wit="#C" type="orthographic">mais</rdg>
+            </app> vau.<seg xml:id="nv36.1"/>
+          </l>
+        </lg>
+        <note target="#nv35.1"><hi rend="italic">belazor</hi>: rima imperfetta in <hi rend="italic">o</hi> chiusa, anziché aperta, e per il consonantismo finale. Persuasiva la giustificazione di Mölk, p. 135-136, che presuppone una formula strofica alla quale ricondurre, saldati in un dodecasillabo, l'ottosillabo e il tetrasillabo. Cfr. <hi rend="italic">Farai un vers pos mi sonelh</hi>.</note>
+        <note target="#nv36.1">Gli enunciati di un soggetto senza identità, estraneo a sé stesso, si concludono con l'affermazione di una realtà che resta senza opposizione. Segue in E la strofe, qui in trascrizione interpretativa con le integrazioni che si ritengono necessarie: <hi rend="italic">No sai lo luec ves on s'esta, Si es en pueg ho &lt;es&gt; en pla; Non aus dire lo tort que m'a, Abans m'en cau, E pezam be quar sai remanc &lt;Per&gt; aitan vau</hi>. «Non so in che luogo vive, se è in montagna o è in pianura; non oso dire il torto che mi fa, anzi sto zitto; e mi pesa molto perché qui rimango allor ch'io vado». Su <hi rend="italic">remanc</hi> informa bene, condensando, Capusso, p. 188-190.</note>
+        
+        <lg n="7">
+          <l n="37">
+            <app xml:id="av37.1">
+              <lem wit="#E">Fait</lem>
+              <rdg wit="#C" type="orthographic">Fag</rdg>
+            </app> ai lo vers, no <app xml:id="av37.2">
+              <lem wit="#E">sai</lem>
+              <rdg wit="#C" type="orthographic">say</rdg>
+            </app> de <app xml:id="av37.3">
+              <lem wit="#E">cui</lem>
+              <rdg wit="#C" type="orthographic">cuy</rdg>
+            </app>,
+          </l>
+          <l n="38">
+            E trametrai lo a <app xml:id="av38.1">
+              <lem wit="#E">celui</lem>
+            </app>
+          </l>
+          <l n="39">
+            Que lo·m <app xml:id="av39.1">
+              <lem wit="#C">trameta</lem>
+              <rdg wit="#E" type="substantive">trametra</rdg>
+            </app> per <app xml:id="av39.2">
+              <lem wit="#E">autrui</lem>
+              <rdg wit="#C" type="orthographic">autry</rdg>
+            </app>,<seg xml:id="nv39.1"/>
+          </l>
+          <l n="40">
+            <app xml:id="av40.1">
+              <lem wit="#E">Enves</lem>
+              <rdg wit="#C" type="substantive">lay ves</rdg>
+            </app> <app xml:id="av40.2">
+              <lem wit="#E">Peitau</lem>
+              <rdg wit="#C" type="substantive">aniau</rdg>
+            </app>,<seg xml:id="nv40.1"/>
+          </l>
+          <l n="41">
+            Que·m tramezes del sieu <app xml:id="av41.1">
+              <lem type="conjecture">estui</lem>
+              <rdg wit="#C" type="substantive">estug</rdg>
+              <rdg wit="#E" type="substantive">escut</rdg>
+            </app>
+          </l>
+          <l n="42">
+            La <app xml:id="av42.1">
+              <lem wit="#C">contraclau</lem>
+              <rdg wit="#E" type="substantive">soa clau</rdg>
+            </app>.<seg xml:id="nv42.1"/>
+          </l>
+        </lg>
+        <note target="#nv39.1"><hi rend="italic">trameta per autrui</hi>: dove <hi rend="italic">per</hi>, imposto dalla sequenza di <hi rend="italic">a</hi> contigui, introduce un complemento di termine, non di mezzo (Jeanroy, Pasero, Bond). Cfr. PSW, VIII, 371. Notare il polittoto (<hi rend="italic">trametrai</hi>... <hi rend="italic">trameta</hi>... <hi rend="italic">tramezes</hi>) che induce a prediligere la lezione di C (<hi rend="italic">trameta</hi> congiuntivo presente).</note>
+        <note target="#nv40.1"><hi rend="italic">Enves Peitau</hi>: non credo che il <hi rend="italic">vers</hi> sia indirizzato a una donna (<hi rend="italic">la gensor e belazor</hi>... <hi rend="italic">que mai vau</hi> o all'<hi rend="italic">amiga</hi> che si finge sconosciuta) che dovrebbe estrarre il trovatore dall'incantesimo degli <hi rend="italic">impossibilia</hi> e, insieme, dargli il modo di penetrare in un <hi rend="italic">estug</hi> che non sembra proprio essere sottomano. E, in tal caso, potrebbe trattarsi di <hi rend="italic">Dangerosa</hi>, moglie di Aimeri I, visconte di Châtellerault, quando ancora non si era trasferita a Poitiers per vivere in aperto concubinato con Guglielmo (Cfr. Richard, I, 472-73). Penso invece che si abbia a che fare con un invito ad un corrispondente al quale Guglielmo, nella circostanza residente in una regione meridionale del suo dominio, rilancia questo gioco di sottrazione dalla realtà. La controchiave, allora, sarà quella che aprirà l'<hi rend="italic">estui</hi> che contiene il <hi rend="italic">vers</hi>. S'impone poi la lezione di E <hi rend="italic">Peitau</hi>, anche se sembra <hi rend="italic">lectio facilior</hi> che non si capisce come abbia potuto produrre la lezione concorrente: ma basterà pensare che non è poi tanto improbabile la presenza nella tradizione di un copista malizioso e ben informato. Cfr. l'elegante conclusione di Ménard 1991.</note>
+        <note target="#nv42.1"><hi rend="italic">contraclau</hi>: «chiave fatta su altra già esistente». Si veda la buona nota di Pasero.</note>
+        
+      </div>
+
+
+<div type="translation" xml:lang="it">
+        <p n="1">Farò un «vers» proprio su niente, non sarà su di me né su altri, non sarà d'amore né di gioventù, né di altra cosa, tanto più che fu concepito, dormendo, su un cavallo.</p>
+        <p n="2">Non so in qual ora sono nato, non sono allegro né triste, non sono d'altrove né di qui, e non posso farci nulla, perché così fui, di notte, stregato su un alto colle.</p>
+        <p n="3">Non so quando sto dormendo né quando sono sveglio, se non me lo si dice; per poco non mi si fende il cuore per un dolore profondo, e non me ne importa nulla, per san Marziale!</p>
+        <p n="4">Sono malato e temo di morire, ma niente so più di quanto non senta dire; cercherò un medico come mi pare, ma non so proprio quale: buon medico sarà se mi può guarire; ma non lo sarà, se peggioro.</p>
+        <p n="5">Ho un'amante: non so chi sia, perché, in fede mia, mai la vidi, né mi fece cosa che mi piaccia o mi dispiaccia, e non me ne importa perché non ebbi mai Normanno né Francese dentro casa </p>
+        <p n="6">Mai la vidi e l'amo molto; mai ne ebbi compenso né mai mi fece torto; se non la vedo, me la passo bene: non m'importa niente, perché ne conosco una più nobile e più bella, e che vale di più.</p>
+        <p n="7">Fatto ho il vers», non so su chi; e lo manderò a chi me lo mandi ad altri, verso il Poitou, che vorrei che del suo astuccio mi mandasse la controchiave.</p>
+  </div>
+</body>
+    
+    <back>
+        <div type="bibliography">
+        <listBibl>
+          <bibl>Jensen 1986 = </bibl>
+          <bibl>Ménard 1991 = Phillippe M., <em>Sens, contresens, non-sens. Réflexions sur la pièce "Farai un vers de dreyt nien" de Guillaume IX</em>, 
+            in <em>Il miglior fabbro. Mélanges de langue et de littérature médiévales offerts à Pierre Bec par ses élèves, ses collègues et ses amis</em>
+            Poitiers, Centre d'Études Supérieures de Civilisation Médiévale, pp. 338-348.</bibl>
+          <bibl>Pfister 1976 = Max P., <em>La langue de Guilhelm IX, comte de Poitiers</em>, «Cahiers de Civilisation Médiévale», XIX, pp. 91-113.</bibl>
+          <bibl>Riquer 1975 =</bibl>
+        </listBibl>
+      </div>
+    </back>
+    
+  </text>
+</TEI>

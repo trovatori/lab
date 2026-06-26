@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Prova</title>
+      </titleStmt>
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="V">Bibliothèque municipale de Valenciennes 150 (olim 143)</witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <facsimile>
+    <surface xml:id="L" corresp="#L">
+      <graphic url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84526286/manifest.json" mimeType="application/ld+json"/>
+      <zone xml:id="141v" n="141v"/>
+      </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="diplomatic">
+        <ab>
+          <pb facs="#141v"/>
+          <lb n="1"/>Buona pulcella fut eulalia.<milestone unit="verse" n="1"/> Bel auret corps bellezour anima.<milestone unit="verse" n="2"/>
+          <lb n="2"/><choice><orig>U</orig><reg>V</reg></choice>oldrent <choice><orig>laueintre</orig><reg>la veintre</reg></choice> li d<choice><abbr>(e)</abbr><expan>e</expan></choice>o Inimi. <milestone unit="verse" n="3"/>  <choice><orig>U</orig><reg>V</reg></choice>oldrent <choice><orig>lafaire</orig><reg>la faire</reg></choice> diaule ser<choice><orig>u</orig><reg>v</reg></choice>ir. <milestone unit="verse" n="4"/>
+          <lb n="3"/>Elle nont eskoltet les mals conseilliers. <milestone unit="verse" n="5"/>  <choice><orig>Quelle</orig><reg>qu'elle</reg></choice> d<choice><abbr>(e)</abbr><expan>e</expan></choice>o raneiet chi maent.<add place="above">sus <choice><orig>enciel</orig><reg>en ciel</reg></choice></add> <milestone unit="verse" n="6"/>
+          <lb n="4"/>Ne por or nez argent <choice><orig>neparamenz</orig><reg>ne paramenz</reg></choice>.<milestone unit="verse" n="7"/>  Por manat<choice><orig>c</orig><reg>ç</reg></choice>e regiel <choice><orig>nepreiement</orig><reg>ne preiement</reg></choice>. <milestone unit="verse" n="8"/>
+          <lb n="5"/>Niule cose non la pouret omq<choice><abbr>(ue)</abbr><expan>ue</expan></choice> pleier. <milestone unit="verse" n="9"/> La polle sempre n<choice><abbr>(on)</abbr><expan>on</expan></choice> amast lo <choice><orig>d<choice><abbr>(e)</abbr><expan>e</expan></choice>o</orig><reg>Deo</reg></choice><choice><orig>.</orig><reg></reg></choice><add place="above">menestier</add><milestone unit="verse" n="10"/>
+          <lb n="6"/>E <choice><orig>poro</orig><reg>por o</reg></choice> fut presentede maximiien.<milestone unit="verse" n="11"/> Chi rex eret acels dis so<choice><orig>u</orig><reg>v</reg></choice>re pagiens. <milestone unit="verse" n="12"/>
+          <lb n="7"/><choice><orig>Illi</orig><reg>Il li</reg></choice> <choice><orig>en ortet</orig><reg>enortet</reg></choice> dont lei nonq<choice><abbr>(ue)</abbr><expan>ue</expan></choice> chielt.<milestone unit="verse" n="13"/>  Qued elle fuiet lo nom <choice><abbr>(christ)</abbr><expan>christ</expan></choice>iien. <milestone unit="verse" n="14"/>
+          <lb n="8"/><choice><orig>Ellent</orig><reg>Ell'ent</reg></choice> adu<subst><del rend="overwritten">r</del><add place="over">n</add></subst>et lo suon element. <milestone unit="verse" n="15"/>  Melz sostendreiet les empedementz.<milestone unit="verse" n="16"/>
+          <lb n="9"/><choice><orig>Quelle</orig><reg>qu'elle</reg></choice> p<choice><abbr>(er)</abbr><expan>er</expan></choice>desse sa <choice><orig>u</orig><reg>v</reg></choice>irginitez.<milestone unit="verse" n="17"/>   <choice><orig>Poros</orig><reg>por o·s</reg></choice> furet morte a grand honestet.<milestone unit="verse" n="18"/>
+          <lb n="10"/>Enz <choice><orig>enl</orig><reg>en·l</reg></choice> fou lo getterent com arde tost.<milestone unit="verse" n="19"/> Elle colpes n<choice><abbr>(on)</abbr><expan>on</expan></choice> auret <choice><orig>poro</orig><reg>por o</reg> </choice><add place="above"><choice><orig>nos</orig><reg>no·s</reg></choice> coist.</add><milestone unit="verse" n="20"/>
+          <lb n="11"/>Aczo nos <choice><orig>u</orig><reg>v</reg></choice>oldert concreidre li rex pagiens. <milestone unit="verse" n="21"/> Ad une spede li ruo<choice><orig>u</orig><reg>v</reg></choice>et<add place="above">tolir la chief</add><milestone unit="verse" n="22"/>
+          <lb n="12"/>La domnizella celle kose n<choice><abbr>(on)</abbr><expan>on</expan></choice> contredist.<milestone unit="verse" n="23"/> <choice><orig>U</orig><reg>V</reg></choice>olt lo seulz lazsier si ruo<choice><orig>u</orig><reg>v</reg></choice>et.<add place="above">krist</add><milestone unit="verse" n="24"/>
+          <lb n="13"/><choice><orig>Infigure</orig><reg>In figure</reg></choice> de colomb <choice><orig>u</orig><reg>v</reg></choice>olat <choice><orig>aciel</orig><reg>a ciel</reg></choice>.<milestone unit="verse" n="25"/> Tuit oram <choice><orig>quepornos</orig><reg>que por nos</reg></choice> degnet preier.<milestone unit="verse" n="26"/>
+          <lb n="14"/>Qued auuisset <choice><orig>denos</orig><reg>de nos</reg></choice> <choice><abbr>(christus)</abbr><expan>Christus</expan></choice> mercit.<milestone unit="verse" n="27"/> Post la mort <choice><abbr>(et)</abbr><expan>et</expan></choice> <choice><orig>alui</orig><reg>a lui</reg></choice> laist <choice><orig>u</orig><reg>v</reg></choice>enir.<milestone unit="verse" n="28"/>
+          <lb n="15"/>Par souue clemencia.
+
+          
+        </ab>
+      </div>
+      
+      
+      <div type="interpretative">
+        <pb facs="#141v"/>
+        <lg>
+          <l n="1"><lb n="1"/>Buona pulcella fut eulalia.<seg xml:id="s_interp_1"/></l>
+          <l n="2">Bel auret corps bellezour anima.</l>
+          <l n="3"><lb n="2"/>Voldrent la veintre li deo Inimi.</l>
+          <l n="4">Voldrent la faire diaule servir.</l>
+          <l n="5"><lb n="3"/>Elle nont eskoltet les mals conseilliers.</l>
+          <l n="6">qu’elle deo raneiet chi maent.sus en ciel</l>
+          <l n="7"><lb n="4"/>Ne por or nez argent ne paramenz.</l>
+          <l n="8">Por manatçe regiel ne preiement.</l>
+          <l n="9"><lb n="5"/>Niule cose non la pouret omque pleier.</l>
+          <l n="10">La polle sempre non amast lo Deomenestier</l>
+          <l n="11"><lb n="6"/>E por o fut presentede maximiien.</l>
+          <l n="12">Chi rex eret acels dis sovre pagiens.</l>
+          <l n="13"><lb n="7"/>Il li enortet dont lei nonque chielt.</l>
+          <l n="14">Qued elle fuiet lo nom christiien.</l>
+          <l n="15"><lb n="8"/>Ell’ent adunet lo suon element.</l>
+          <l n="16">Melz sostendreiet les empedementz.</l>
+          <l n="17"><lb n="9"/>qu’elle perdesse sa virginitez.</l>
+          <l n="18">por o·s furet morte a grand honestet.</l>
+          <l n="19"><lb n="10"/>Enz en·l fou lo getterent com arde tost.</l>
+          <l n="20">Elle colpes non auret por ono·s coist.</l>
+          <l n="21"><lb n="11"/>Aczo nos voldert concreidre li rex pagiens.</l>
+          <l n="22">Ad une spede li ruovettolir la chief</l>
+          <l n="23"><lb n="12"/>La domnizella celle kose non contredist.</l>
+          <l n="24">Volt lo seulz lazsier si ruovet.krist</l>
+          <l n="25"><lb n="13"/>In figure de colomb volat a ciel.</l>
+          <l n="26">Tuit oram que por nos degnet preier.</l>
+          <l n="27"><lb n="14"/>Qued auuisset de nos Christus mercit.</l>
+          <l n="28">Post la mort et a lui laist venir.</l>
+          <l n="29"><lb n="15"/>Par souue clemencia.</l>
+        </lg>
+        
+        <note target="#s_interp_1">Prova.</note>
+      </div>
+       
+
+    </body>
+  </text>
+</TEI>
+

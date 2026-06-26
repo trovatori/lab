@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt><title>Edizione critica</title></titleStmt>
+      <publicationStmt><p>Generato da Converter Edizione Critica</p></publicationStmt>
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="A">A</witness>
+          <witness xml:id="C">C</witness>
+          <witness xml:id="D^a">D<hi rend="sup">a</hi></witness>
+          <witness xml:id="I">I</witness>
+          <witness xml:id="K">K</witness>
+          <witness xml:id="N">N</witness>
+          <witness xml:id="N^2">N<hi rend="sup">2</hi></witness>
+          <witness xml:id="R">R</witness>
+          <witness xml:id="a">a</witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text><body>
+      <div type="edition">
+        <lg>
+          <l n="1"><app xml:id="app_1">
+              <lem wit="#A #D^a #I #K #N^2">Ar</lem>
+              <rdg wit="#R">Aras</rdg>
+              <rdg wit="#C">Er</rdg>
+              <rdg wit="#a">Eu</rdg>
+              <rdg wit="#N">[...]r</rdg>
+            </app> <app xml:id="app_2">
+              <lem wit="#A #D^a #I #K #N #N^2 #a">non</lem>
+              <rdg wit="#C #R">no</rdg>
+            </app> sui <app xml:id="app_3">
+              <lem wit="#A #R #a">jes</lem>
+              <rdg wit="#C #D^a #I #K #N #N^2">ges</rdg>
+            </app> <app xml:id="app_4">
+              <lem wit="#A #D^a #I #K #N #N^2 #a">mals et astrucs</lem>
+              <rdg wit="#R">malastrucx</rdg>
+              <rdg wit="#C">astrucx</rdg>
+            </app>,</l>
+          <l n="2"><app xml:id="app_5">
+              <lem wit="#A #R #a">Anz</lem>
+              <rdg wit="#C">Quan</rdg>
+              <rdg wit="#D^a #I #K #N^2">an</rdg>
+              <rdg wit="#N">[...]an</rdg>
+            </app> <app xml:id="app_6">
+              <lem wit="#A #C #I #N #R">sui</lem>
+              <rdg wit="#D^a #K #N^2">soi</rdg>
+              <rdg wit="#a">son</rdg>
+            </app> ben <app xml:id="app_7">
+              <lem wit="#A #D^a #I #N #N^2 #a">malastrucs</lem>
+              <rdg wit="#K">malastucus</rdg>
+              <rdg wit="#C #R">malastrucx</rdg>
+            </app> <app xml:id="app_8">
+              <lem wit="#D^a #R #a">de</lem>
+              <rdg wit="#A #N">per</rdg>
+              <rdg wit="#C #I #K #N^2">de</rdg>
+            </app> <app xml:id="app_9">
+              <lem wit="#C #D^a #I #K #N^2 #R">dreg</lem>
+              <rdg wit="#A">dreig</rdg>
+              <rdg wit="#N">dreh</rdg>
+              <rdg wit="#a">dreitz</rdg>
+            </app>;</l>
+          <l n="3">E <app xml:id="app_10">
+              <lem wit="#A">puois</lem>
+              <rdg wit="#C #D^a #I #K #N^2 #R #a">pos</rdg>
+              <rdg wit="#N">puos</rdg>
+            </app> <app xml:id="app_11">
+              <lem wit="#A #C #D^a #I #K #N #N^2">malastres</lem>
+              <rdg wit="#R">malastre</rdg>
+              <rdg wit="#a">malastrucs</rdg>
+            </app> m’a <app xml:id="app_12">
+              <lem wit="#C #D^a #I #K #N^2 #R">eleg</lem>
+              <rdg wit="#A">eleig</rdg>
+              <rdg wit="#N">eleh</rdg>
+              <rdg wit="#a">eleitz</rdg>
+            </app></l>
+          <l n="4">Farai vers <app xml:id="app_13">
+              <lem wit="#A #C #D^a #I #K #N^2 #R #a">malastruc</lem>
+              <rdg wit="#N">malastrucs</rdg>
+            </app> <app xml:id="app_14">
+              <lem wit="#C #D^a #I #K #N #N^2 #R #a">e <app xml:id="app_25">
+                  <lem wit="#A #C #D^a #I #K #N^2 #R">freg</lem>
+                  <rdg wit="#N">freh</rdg>
+                  <rdg wit="#a">freitz</rdg>
+                </app></lem>
+              <rdg wit="#A">adreig</rdg>
+            </app>.</l>
+          <l n="5"><app xml:id="app_26">
+              <lem wit="#C #D^a #I #K #N #N^2 #R #a"><app xml:id="app_18">
+                  <lem wit="#A #C #D^a #I #K #N^2">Si</lem>
+                  <rdg wit="#R">Pus no(n)</rdg>
+                  <rdg wit="#N">Que non</rdg>
+                  <rdg wit="#a">Qeu non</rdg>
+                </app> <app xml:id="app_19">
+                  <lem wit="#A #D^a #I #K #N #N^2 #R #a">trop</lem>
+                  <rdg wit="#C">truep</rdg>
+                </app> un <app xml:id="app_20">
+                  <lem wit="#A #C #D^a #I #K #N^2 #R #a">malastruc</lem>
+                  <rdg wit="#N">malastrucs</rdg>
+                </app> <app xml:id="app_21">
+                  <lem wit="#A #C #D^a #I #K #N^2 #a">adreg</lem>
+                  <rdg wit="#N">adreh</rdg>
+                  <rdg wit="#R">e(n)dreg</rdg>
+                </app></lem>
+              <rdg wit="#A"/>
+            </app><seg xml:id="sn_1"/></l>
+          <l n="6"><app xml:id="app_22">
+              <lem wit="#C #D^a #I #K #N^2">Qu'el</lem>
+              <rdg wit="#a">quil</rdg>
+              <rdg wit="#A">que</rdg>
+              <rdg wit="#N">que</rdg>
+              <rdg wit="#R">qu(e)</rdg>
+            </app> <app xml:id="app_23">
+              <lem wit="#a">malastruc cap</lem>
+              <rdg wit="#A">malastrugamen</rdg>
+              <rdg wit="#C">caps malstrucx</rdg>
+              <rdg wit="#D^a #I #K #N^2">cap malastruc</rdg>
+              <rdg wit="#N">malastrucs cap</rdg>
+              <rdg wit="#R">mo malastre</rdg>
+            </app> <app xml:id="app_24">
+              <lem wit="#C #I #K #N^2">mi pesseg</lem>
+              <rdg wit="#a">empezeitz</rdg>
+              <rdg wit="#N">men pesseh</rdg>
+              <rdg wit="#D^a">mi peseg</rdg>
+              <rdg wit="#R">ap(er)sech</rdg>
+              <rdg wit="#A">pesseig</rdg>
+            </app>!</l>
+        </lg>
+        
+        <note target="#sn_1">L'intero verso è omesso nel ms. A.</note>
+      </div>
+    </body></text>
+</TEI>

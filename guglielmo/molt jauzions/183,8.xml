@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+  <fileDesc>
+    <titleStmt><title>Edizione critica</title></titleStmt>
+    <publicationStmt><p>Generato da Converter Edizione Critica</p></publicationStmt>
+    <sourceDesc>
+      <listWit>
+        <witness xml:id="C">C</witness>
+        <witness xml:id="E">E</witness>
+      </listWit>
+    </sourceDesc>
+  </fileDesc>
+</teiHeader>
+<text><body>
+<div type="edition">
+<lg>
+  <l n="1"><app xml:id="app_5">
+      <lem wit="#E">Molt</lem>
+      <rdg wit="#C" type="orthographic">mout</rdg>
+    </app> <app xml:id="app_1">
+      <lem wit="#E">jauzions</lem>
+      <rdg wit="#C" type="substantive">iauzens</rdg>
+    </app> <app xml:id="app_6">
+      <lem wit="#E">mi</lem>
+      <rdg wit="#C" type="orthographic">me</rdg>
+    </app> prenc <app xml:id="app_2">
+      <lem wit="#E">amar</lem>
+      <rdg wit="#C" type="substantive">en amar</rdg>
+    </app><seg xml:id="sn_1"/></l>
+  <l n="2">Un <app xml:id="app_7">
+      <lem wit="#E">joi</lem>
+      <rdg wit="#C" type="orthographic">ioy</rdg>
+    </app> don plus mi <app xml:id="app_8">
+      <lem wit="#E">vueill</lem>
+      <rdg wit="#C" type="orthographic">uuelh</rdg>
+    </app> aizir;</l>
+  <l n="3">E <app xml:id="app_9">
+      <lem wit="#E">pos</lem>
+      <rdg wit="#C" type="orthographic">pus</rdg>
+    </app> en <app xml:id="app_10">
+      <lem wit="#E">joi</lem>
+      <rdg wit="#C" type="orthographic">ioy</rdg>
+    </app> <app xml:id="app_11">
+      <lem wit="#E">vueill</lem>
+      <rdg wit="#C" type="orthographic">uuelh</rdg>
+    </app> revertir,</l>
+  <l n="4">Ben <app xml:id="app_12">
+      <lem wit="#E">dei</lem>
+      <rdg wit="#C" type="orthographic">dey</rdg>
+    </app>, si puesc, al <app xml:id="app_3">
+      <lem type="conjecture">meils</lem>
+      <rdg wit="#E" type="substantive">meins</rdg>
+      <rdg wit="#C" type="orthographic">mielhs</rdg>
+    </app> anar<seg xml:id="sn_2"/>,</l>
+  <l n="5">Quar <app xml:id="app_4">
+      <lem type="conjecture">meillor n'am</lem>
+      <rdg wit="#C" type="substantive">mielhs ornam</rdg>
+      <rdg wit="#E" type="substantive">meils ornan</rdg>
+    </app><seg xml:id="sn_3"/>, estiers cujar,</l>
+  <l n="6"><app xml:id="app_13">
+      <lem wit="#E">C'om</lem>
+      <rdg wit="#C" type="orthographic">quom</rdg>
+    </app> puesca vezer ni auzir.</l>
+</lg>
+
+  <note target="#sn_1"><hi rend="italic">jauzions mi prenc amar</hi>: è <hi rend="italic">lectio difficilior</hi> per il poco frequente trisillabo <hi rend="italic">jauzions</hi>. Potrebbe insospettire l'assenza di preposizione davanti ad <hi rend="italic">amar</hi>; ma il caso va affiancato a quello presente nella <hi rend="italic">S. Agnes</hi>, ed. Jeanroy, v. 327, <hi rend="italic">quant lo fucs pren escalfar</hi>.</note>
+  <note target="#sn_2"><hi rend="italic">al miels anar</hi>: dovrà intendersi «comportarmi nel migliore dei modi».</note>
+  <note target="#sn_3"><hi rend="italic">meillor n'am</hi>: sono del tutto insoddisfacenti le congetture (rassegna in Capusso, pp. 201-203) che mantengono l'avverbio <hi rend="italic">miels</hi>/<hi rend="italic">mielhs</hi>, erroneamente prodottosi per probabile contiguità verticale, così ancora in C, con il sintagma <hi rend="italic">mielhs anar</hi>. Il pronome, in <hi rend="italic">n'am</hi>, non può che rinviare a <hi rend="italic">joi</hi>.</note>
+</div>
+</body></text>
+</TEI>
