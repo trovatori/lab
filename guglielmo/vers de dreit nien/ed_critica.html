@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" data-root="https://trovatori.github.io/trovatori/">
 
 <head>
   <meta charset="utf-8" />
@@ -3859,18 +3859,23 @@ highlightNote(segId, srcCol)
     <div id="fn-popover-body"></div>
   </div>
 
-  <!-- Fix: corregge il link Home in base alla profondità della cartella corrente.
-       ../index.html funziona per edizioni a un livello (eulalia/, philippe/),
-       ma non per edizioni a due livelli (guglielmo/molt jauzions/, raimbaut/Ar no sui…/).
-       Lo script calcola quanti ../ servono e aggiorna l'href prima del primo render. -->
+  <!-- Fix: corregge il link Home usando data-root sull'elemento <html>.
+       Funziona sia in locale (file://) sia su GitHub Pages (o qualsiasi
+       sottopath), senza fare assunzioni sulla struttura delle cartelle.
+       Per aggiornare la root basta cambiare data-root nel tag <html>. -->
   <script>
     (function () {
-      const segments = window.location.pathname.split('/').filter(Boolean);
-      // segments.length - 1 = numero di cartelle sopra il file HTML corrente
-      const depth = segments.length - 1;
-      const prefix = '../'.repeat(depth);
       const link = document.getElementById('home-link');
-      if (link) link.href = prefix + 'index.html';
+      if (!link) return;
+      const root = document.documentElement.dataset.root;
+      if (root) {
+        // Usa il path assoluto dichiarato in data-root
+        link.href = root.endsWith('/') ? root + 'index.html' : root + '/index.html';
+      } else {
+        // Fallback locale: calcola ../  in base alla profondità del pathname
+        const depth = window.location.pathname.split('/').filter(Boolean).length - 1;
+        link.href = '../'.repeat(depth) + 'index.html';
+      }
     })();
   </script>
 
